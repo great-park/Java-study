@@ -6,24 +6,43 @@ public class Person {
     private BankAccount account;
 
     //생성자
-    public Person(String pName, int pCashAmount){
-        name = pName;
-        cashAmount = pCashAmount;
+    public Person(String name, int cashAmount){
+        this.name = name;
+        this.cashAmount = cashAmount;
     }
 
-    public Person(String pName){
-        name = pName;
+    public Person(String name){
+        this.name = name;
         cashAmount = 0;
     }
 
+    public void setAge(int age){
+        if(age>=0){
+            this.age = age;
+        }
+    }
+    public int getAge(){
+        return age;
+    }
+
+    //this 키워드 사용 - 메소드를 호출한 인스턴스를 가리킴
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setCashAmount(int cashAmount){
+        this.cashAmount = cashAmount;
+    }
     public int getCashAmount(){
         return cashAmount;
     }
     public BankAccount getAccount(){
         return account;
     }
-    public void setAccount(BankAccount pAccount){
-        account = pAccount;
+    public void setAccount(BankAccount account){
+        this.account = account;
     }
 
     //1.
