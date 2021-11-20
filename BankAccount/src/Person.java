@@ -5,23 +5,17 @@ public class Person {
     private int cashAmount;
     private BankAccount account;
 
-    public void setAge(int newAge){
-        if(newAge>=0){
-            age = newAge;
-        }
+    //생성자
+    public Person(String pName, int pCashAmount){
+        name = pName;
+        cashAmount = pCashAmount;
     }
-    public int getAge(){
-        return age;
+
+    public Person(String pName){
+        name = pName;
+        cashAmount = 0;
     }
-    public void setName(String newName){
-        name = newName;
-    }
-    public String getName(){
-        return name;
-    }
-    public void setCashAmount(int newCashAmount){
-        cashAmount = newCashAmount;
-    }
+
     public int getCashAmount(){
         return cashAmount;
     }
