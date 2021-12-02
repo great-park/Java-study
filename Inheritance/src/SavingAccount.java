@@ -15,7 +15,8 @@ public class SavingAccount extends BankAccount{
 * private 변수도 자식에게 상속되는 것은 맞으나, 변수나 메소드에 접근할 수 있는 권한이 private로 막혀있기 때문에 접근 불가한 것.
 * */
     public void addInterest(){
-        setBalance( (int) (getBalance() * (1+interest)) );
+        //setBalance( (int) (getBalance() * (1+interest)) );
+        balance = (int)(balance*(1+interest));
     }
 }
 
