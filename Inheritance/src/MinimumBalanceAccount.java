@@ -14,7 +14,7 @@ public class MinimumBalanceAccount extends BankAccount{
 * 메소드 정의 위에 써져있는 @Override가 메소드 오버라이딩을 표시해줍니다.
 * */
 
-    @Override   //'어노테이션(Annotation)'
+    @Override   //'어노테이션(Annotation)'  주석과는 차이점이 존재하는듯! 더 알아보자
     public boolean withdraw(int amount){
         if(getBalance() - amount < minimum){
             System.out.println("적어도 " + minimum + "원은 남겨야 합니다.");

@@ -16,7 +16,7 @@ public class BankAccount {
             return true;
         }
 
-        return false
+        return false;
     }
 
     // 입금
@@ -25,3 +25,4 @@ public class BankAccount {
         return true;
     }
 }
+
