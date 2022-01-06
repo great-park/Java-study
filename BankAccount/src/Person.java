@@ -5,6 +5,7 @@ public class Person {
     private int cashAmount;
     private BankAccount account;
 
+    //this 키워드 사용 - 메소드를 호출한 인스턴스를 가리킴
     //생성자
     public Person(String name, int cashAmount){
         this.name = name;
@@ -25,7 +26,7 @@ public class Person {
         return age;
     }
 
-    //this 키워드 사용 - 메소드를 호출한 인스턴스를 가리킴
+
     public void setName(String name){
         this.name = name;
     }
